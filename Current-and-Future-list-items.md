@@ -17,6 +17,7 @@ _(from **bug** label)_
 _(from **feature**/**enhancement** label)_
 * Add better error/notification support
 * Add support for volumes-from
+* Add support for private registry (enterprise, on-premise)
 * Add support for other drivers (not just VM)
 
 If an item is not on the roadmap/future list and a PR is made it will more than likely be shelved. 
