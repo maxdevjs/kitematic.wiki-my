@@ -1,3 +1,9 @@
+### 403 Errors
+
+If you're a new user, you will need to verify your Dockerhub email address before installing images will work.
+
+See Issue #719.
+
 ### Cannot Download Image/Connect
 This could be a simple DNS issue, try the following:
 
