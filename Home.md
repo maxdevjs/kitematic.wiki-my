@@ -2,6 +2,8 @@
 
 Project Pages define the goals of each Milestone and identify current progress.
 
+**Note: this planning doc is work in progress**
+
 | Project Page | Target Date  | Current Sprint |
 |--------------|-------------|----------------|----------------|
 | [Kitematic 0.9.0](https://github.com/kitematic/kitematic/wiki/0.9.0-Milestone-Project-Page) | 10/06/2015 | 
