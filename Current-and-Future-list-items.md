@@ -19,6 +19,8 @@ _(from **feature**/**enhancement** label)_
 * Add support for volumes-from
 * Add support for private registry (enterprise, on-premise)
 * Add support for other drivers (not just VM)
+* Add support for docker-compose (open file)
+* Add support for Dockerfile (open file)
 
 If an item is not on the roadmap/future list and a PR is made it will more than likely be shelved. 
 This allows the community to know what is actively being worked on and what will be coming. 
