@@ -26,6 +26,7 @@ This could be a simple DNS issue, try the following:
 4. tell the current terminal about the new docker group changes
   `$ newgrp docker`
 5. download kitematic to /opt/kitematic (for example)
+
   ```bash
   $ cd /opt
   $ sudo git clone https://github.com/zedtux/kitematic
@@ -33,10 +34,13 @@ This could be a simple DNS issue, try the following:
   $ sudo git checkout linux-support
   $ sudo make
   ```
+
 6. adjust permissions so that anyone in docker group may use kitematic
+
   ```bash
   $ chmod -R g+w .
   $ chgrp -R docker .
   ```
+
 7. start kitematic
   `$ npm start`
