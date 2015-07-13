@@ -1,5 +1,3 @@
-Kitematic supports 
-
 ### Suggested Q3 3-month MVP:
 
 #### Tech Architecture
@@ -15,6 +13,5 @@ Kitematic supports
 
 #### Existing Work
 
-- 
 - https://github.com/TeckniX/kitematic/tree/docker-engine-selection
 - DockerCon Hackathon (LightningKite)
