@@ -1,6 +1,4 @@
-## Kitematic Project Planning
-
-### Releases
+### Project Planning
 
 Project Pages define the goals of each Milestone and identify current progress.
 
