@@ -2,14 +2,10 @@
 
 #### Tech Architecture
 
-#### Design
+#### Design Overview
 
 #### Provider Support
-- Fusion
-- Digital Ocean
 - VirtualBox
-- AWS
-- Azure?
 
 #### Outstanding Machine Issues
 
