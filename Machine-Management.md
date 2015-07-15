@@ -2,7 +2,7 @@
 
 #### Tech Architecture
 ###### Provider Setup
-1. Picker chooses provider
+1. A graphical picker chooses a provider
 2. DriverSetupStore sets up provider
 4. Set up info (tokens, endpoints, creds, etc.) pulled from settings (interactive?)
 5. (Provider verification?)
@@ -16,7 +16,9 @@
 
 #### Outstanding Machine Issues
 
-- First here
+- VPN connection issue ( https://github.com/kitematic/kitematic/issues/254 ) 
+- Proxy issue ( https://github.com/docker/machine/issues/1319 ) 
+
 
 #### Existing Work
 
