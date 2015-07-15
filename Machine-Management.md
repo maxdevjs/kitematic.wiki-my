@@ -16,6 +16,7 @@
 
 #### Outstanding Machine Issues
 
+- Stuck at 99% ( https://github.com/kitematic/kitematic/issues/236 ), here it seems like we need better error reporting. 
 - VPN connection issue ( https://github.com/kitematic/kitematic/issues/254 ) 
 - Proxy issue ( https://github.com/docker/machine/issues/1319 ) 
 
