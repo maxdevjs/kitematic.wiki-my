@@ -25,7 +25,7 @@
 
 - Proposal: https://github.com/kitematic/kitematic/issues/777
 - https://github.com/TeckniX/kitematic/tree/docker-engine-selection
-- DockerCon Hackathon (LightningKite)[https://github.com/fsoppelsa/kitematic]
+- [DockerCon Hackathon (LightningKite)](https://github.com/fsoppelsa/kitematic)
 
 
 **3-month MVP**
