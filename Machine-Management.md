@@ -26,3 +26,41 @@
 - Proposal: https://github.com/kitematic/kitematic/issues/777
 - https://github.com/TeckniX/kitematic/tree/docker-engine-selection
 - DockerCon Hackathon (LightningKite)
+
+
+**3-month MVP**
+- Providers
+ - Local
+  - **VirtualBox**
+  - AppCatalyst?
+  - XHyve
+  - Hyper-V
+  - Working best out of the box (Mac, Windows), backwards compatibility
+
+ - Cloud Providers
+  - Choose one that is well-supported, easy to integrate (Digital Ocean)
+
+ - Choose specific Docker Machine parameters for each provider
+ - Custom-built experience for each provider, but share the same UI + Look & Feel
+ - Add arbitrary key-value parameters
+ - Explore other out-of-the-box providers like Xhyve, Hyper-V
+ - Advanced section with custom flags read from CLI
+ - Default flags from machine
+
+- Docker Machine CLI bindings in Javascript
+
+- Custom install flow for each provider
+
+- Machine management in settings panel. Possibly page for machine management (like the Log In page today), or even.
+- Kitematic runs without VBox installed, setup delegated to machine management.
+
+Process
+- Proposal in wiki
+- List of pieces that need to be worked on
+- Issue for each piece that needs to be worked on, with comment thread
+- Bi-weekly meeting
+
+Technical Process
+- Javascript Style Guide
+- Contributors via PRs
+- `machine` branch
