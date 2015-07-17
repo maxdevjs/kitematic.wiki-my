@@ -1,4 +1,4 @@
-### Suggested Q3 3-month MVP:
+### Suggested End of Q3 3-month MVP:
 
 #### Tech Architecture
 ###### Provider Setup
