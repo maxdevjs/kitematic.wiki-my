@@ -32,10 +32,10 @@
 **3-month MVP**
 - Providers
  - Local
-  - [] **VirtualBox**
-  - [] AppCatalyst?
-  - [] XHyve _(~~On hold until kernel panic with vbox installed is fixed. Possibly fixed in vbox 5.x~~)_
-  - [] Hyper-V
+  - [ ] **VirtualBox**
+  - [ ] AppCatalyst?
+  - [ ] XHyve _(~~On hold until kernel panic with vbox installed is fixed. Possibly fixed in vbox 5.x~~)_
+  - [ ] Hyper-V
   - Working best out of the box (Mac, Windows), backwards compatibility
 
  - Cloud Providers
