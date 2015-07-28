@@ -1,7 +1,8 @@
 ### Kitematic VM Stuck at 99%
 
-For previous windows user, assume 'docker-vm' to be 'kitematic'. 
 **Windows Users** Please make sure that your anti-virus/security/firewall allows connection to/from the VM ip 192.168.99.100
+
+For previous windows user, assume 'docker-vm' to be 'kitematic'. 
 
 1. Turn off your VM via the following terminal command `docker-machine stop docker-vm` (Docker commands must be installed for this to work)
 2. Open your VirtualBox app and go to your Preferences (app preferences, not VM settings)
