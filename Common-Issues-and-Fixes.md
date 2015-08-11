@@ -21,7 +21,15 @@ For previous windows user, assume 'docker-vm' to be 'kitematic'.
 
 _If none of you vboxnet have the proper setup, you can change the one that your VM uses to have the proper server address of `192.168.99.1`_
 
+#### Windows 10
+
 Virtualbox seems to have a bug in Windows 10 and host-only adapter (mentioned above), a fix/patch exists at the following location: [Windows host-only adapter creation fails due to slow background processing](https://www.virtualbox.org/ticket/14040)
+
+Try also to enable Virtualization in the Bios - thanks to @SkiftCreative for the tip:
+* In windows 8/10 you can get there by clicking the power menu, holding [SHIFT] then hitting restart. 
+* Keeping [SHIFT] held until the screen changes
+* Go into advanced settings, then change EUFI settings (were not changing those settings, were just getting into BIOS).
+* Once in BIOS enable virtualization, then save and restart.
 
 
 ### 403 Errors
