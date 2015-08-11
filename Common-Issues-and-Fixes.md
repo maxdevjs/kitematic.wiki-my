@@ -85,3 +85,6 @@ You see this message when your Linux distribution does not have the `x-terminal-
 This symbolic link is pointing to the default terminal which is then used by Kitematic in order to provide you access in a running container.
 
 Depending on your distribution you need to find the right package to install. For example on Debian [this page](https://packages.debian.org/fr/jessie/x-terminal-emulator) shows a list of possible packages to install `x-terminal-emulator`.
+
+### Proxy issues:
+A few possible work-arounds have been detailed here: https://github.com/kitematic/kitematic/issues/685.
