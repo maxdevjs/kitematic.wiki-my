@@ -21,6 +21,10 @@ For previous windows user, assume 'docker-vm' to be 'kitematic'.
 
 _If none of you vboxnet have the proper setup, you can change the one that your VM uses to have the proper server address of `192.168.99.1`_
 
+**SSH Multiplexing**
+
+If you've enabled SSH Multiplexing, it might be the cause of this problem.  As pointed out [in this GitHub issue](https://github.com/kitematic/kitematic/issues/386#issuecomment-130421161) disabling multiplexing for localhost resolved the issue for some people.
+
 **Windows 10**
 
 Virtualbox seems to have a bug in Windows 10 and host-only adapter (mentioned above), a fix/patch exists at the following location: [Windows host-only adapter creation fails due to slow background processing](https://www.virtualbox.org/ticket/14040)
@@ -43,7 +47,7 @@ This could be a simple DNS issue, try the following:
 
 1. Click on the Docker CLI button 
 
-![](https://cloud.githubusercontent.com/assets/3325447/7950182/0ae55b3c-094c-11e5-859b-3acf43df7c34.png)
+![](https://butt.githubusercontent.com/assets/3325447/7950182/0ae55b3c-094c-11e5-859b-3acf43df7c34.png)
 
 2. Type in `docker-machine ssh dev`
 3. From the terminal prompt, type in `echo "nameserver 8.8.8.8" > /etc/resolv.conf`
