@@ -16,7 +16,9 @@ For previous windows user, assume 'default' to be 'kitematic'.
 7. Click Settings then Network
 8. Adapter 2 should be a Host-Only Adapter, and change its name to be the vboxnet you noted above.
 9. Click OK and close VirtualBox app
-10. In your terminal run: `docker-machine start default` then `docker-machine regenerate-certs default`
+10. In your terminal run: `docker-machine start default` 
+If you were stuck at 99% you may need to regenerate the certs:
+10b. `docker-machine regenerate-certs default`
 11.  You can now start Kitematic and see it working :)
 
 _If none of you vboxnet have the proper setup, you can change the one that your VM uses to have the proper server address of `192.168.99.1`_
