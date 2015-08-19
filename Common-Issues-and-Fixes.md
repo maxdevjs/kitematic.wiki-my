@@ -2,7 +2,7 @@
 
 **Windows Users** Please make sure that your anti-virus/security/firewall allows connection to/from the VM ip 192.168.99.100
 
-For previous windows user, assume 'docker-vm' to be 'kitematic'. 
+For previous windows user, assume 'default' to be 'kitematic'. 
 
 1. Turn off your VM via the following terminal command `docker-machine stop docker-vm` (Docker commands must be installed for this to work)
 2. Open your VirtualBox app and go to your Preferences (app preferences, not VM settings)
@@ -12,11 +12,11 @@ For previous windows user, assume 'docker-vm' to be 'kitematic'.
   2. Click on DHCP Server tab
   3. On the selected vboxnet, check if `DHCP Server` is checked - if it is, check if the `Server address` is: `192.168.99.1` - If NOT, just click Cancel and move on to the next one.
 5. Write down which vboxnet0, vboxnet1, vboxnet2 (however many) has the proper setting of `DHCP server` checked and a `Server address` of `192.168.99.1` and cancel out of the Preferences
-6. Select the 'docker-vm' VM
+6. Select the 'default' VM
 7. Click Settings then Network
 8. Adapter 2 should be a Host-Only Adapter, and change its name to be the vboxnet you noted above.
 9. Click OK and close VirtualBox app
-10. In your terminal run: `docker-machine start docker-vm` then `docker-machine regenerate-certs docker-vm`
+10. In your terminal run: `docker-machine start default` then `docker-machine regenerate-certs default`
 11.  You can now start Kitematic and see it working :)
 
 _If none of you vboxnet have the proper setup, you can change the one that your VM uses to have the proper server address of `192.168.99.1`_
