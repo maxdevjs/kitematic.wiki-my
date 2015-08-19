@@ -1,4 +1,4 @@
-### Kitematic VM Stuck at 99%
+### Kitematic VM Stuck at 99% or Cannot pull images
 
 **Windows Users** Please make sure that your anti-virus/security/firewall allows connection to/from the VM ip 192.168.99.100
 
