@@ -20,8 +20,8 @@ For previous windows user, assume 'default' to be 'kitematic'.
 
 If you were stuck at 99% you may need to regenerate the certs:
 
-11. `docker-machine regenerate-certs default`
-12.  You can now start Kitematic and see it working :)
+1. `docker-machine regenerate-certs default`
+2.  You can now start Kitematic and see it working :)
 
 _If none of you vboxnet have the proper setup, you can change the one that your VM uses to have the proper server address of `192.168.99.1`_
 
