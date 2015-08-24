@@ -1,3 +1,6 @@
+### Machine issues (VirtualBox)
+If you keep experiencing VM creation issue, install the [test VirtualBox software](https://www.virtualbox.org/wiki/Testbuilds), as it has been shown to be a viable solution for some, 
+
 ### Kitematic VM Stuck at 99% or Cannot pull images
 
 **Windows Users** Please make sure that your anti-virus/security/firewall allows connection to/from the VM ip 192.168.99.100
