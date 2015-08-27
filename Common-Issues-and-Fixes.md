@@ -65,42 +65,5 @@ This could be a simple DNS issue, try the following:
 3. From the terminal prompt, type in `echo "nameserver 8.8.8.8" > /etc/resolv.conf`
 
 
-### Early Linux support from @zedtux
-
-1. install docker
-  `$ curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
-2. add my user to docker group
-  `$ sudo gpasswd -a ${USER} docker`
-3. restart docker
-  `$ sudo service docker restart`
-4. tell the current terminal about the new docker group changes
-  `$ newgrp docker`
-5. download kitematic to /opt/kitematic (for example)
-
-  ```bash
-  $ cd /opt
-  $ sudo git clone https://github.com/zedtux/kitematic
-  $ cd kitematic/
-  $ sudo git checkout linux-support
-  $ sudo make
-  ```
-
-6. adjust permissions so that anyone in docker group may use kitematic
-
-  ```bash
-  $ chmod -R g+w .
-  $ chgrp -R docker .
-  ```
-
-7. start kitematic
-  `$ npm start`
-
-##### The terminal emulator symbolic link doesn't exists
-
-You see this message when your Linux distribution does not have the `x-terminal-emulator` symbolic link installed.
-This symbolic link is pointing to the default terminal which is then used by Kitematic in order to provide you access in a running container.
-
-Depending on your distribution you need to find the right package to install. For example on Debian [this page](https://packages.debian.org/fr/jessie/x-terminal-emulator) shows a list of possible packages to install `x-terminal-emulator`.
-
 ### Proxy issues:
 A few possible work-arounds have been detailed here: https://github.com/kitematic/kitematic/issues/685.
