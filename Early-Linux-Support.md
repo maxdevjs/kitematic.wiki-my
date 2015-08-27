@@ -1,6 +1,8 @@
 ### Install NVM and Node
-1. Install NVM `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash`
-2. Install Node v0.10.40 `nvm install v0.10.40`
+1. Install NVM 
+   `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash`
+2. Install Node v0.10.40 
+   `nvm install v0.10.40`
 
 
 ### Early Linux support from @zedtux
