@@ -4,7 +4,7 @@ If you keep experiencing VM creation issue, install the [test VirtualBox softwar
 1. Uninstall any existing VirtualBox using the official Uninstall.tool You may need to reboot if certain kext files are not properly unloaded.
 2. Run Kitematic reset [script](https://github.com/kitematic/kitematic/blob/master/util/reset)
 3. Install [VirtualBox 5.03 Testing](https://www.virtualbox.org/wiki/Testbuilds) 
-4. Install (Docker Toolbox)[https://www.docker.com/toolbox]
+4. Install [Docker Toolbox](https://www.docker.com/toolbox)
 
 ### Kitematic VM Stuck at 99% or Cannot pull images
 
