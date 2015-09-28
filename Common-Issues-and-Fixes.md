@@ -67,3 +67,32 @@ This could be a simple DNS issue, try the following:
 
 ### Proxy issues:
 A few possible work-arounds have been detailed here: https://github.com/kitematic/kitematic/issues/685.
+
+#### Windows Solution
+Create a windows batch script under "C:\Program Files\Docker Toolbox\kitematic_proxy.cmd" with the below script, replacing "YOUR_PROXY" with the http://host:port of your own proxy.
+
+```
+set proxy=YOUR_PROXY
+SET HTTP_PROXY=%proxy%
+SET HTTPS_PROXY=%proxy%
+for /f %%i in ('docker-machine.exe ip default') do set DOCKER_HOST=%%i
+SET NO_PROXY=%DOCKER_HOST%
+set DOCKER_HOST=tcp://%DOCKER_HOST%:2376
+cd Kitematic
+Kitematic.exe
+```
+
+If you have an enterprise proxy between your workstation and the public internet you also need to configure this proxy in your boot2docker vm host:
+
+Because of wrong keyboard layout and problems with special key in oracle virtual box native console i connected with WinScp on my docker host using DOCKER_HOST IP login user:docker and pwd:tcuser. Then edit the profile to add the following proxy settings:
+
+```
+sudo vi /var/lib/boot2docker/profile
+
+# Press 'i' to start editing mode
+export HTTP_PROXY=http://your.proxy.name:8080
+export HTTPS_PROXY=http://your.proxy.name:8080
+# Press 'escape' and then type ':x' to save and exit the file. 
+```
+
+Now restart your vm for the above proxy settings to take effect via `docker-machine restart default`
