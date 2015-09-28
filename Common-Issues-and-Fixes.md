@@ -66,7 +66,7 @@ This could be a simple DNS issue, try the following:
 
 
 ### Proxy issues:
-A few possible work-arounds have been detailed here: https://github.com/kitematic/kitematic/issues/685.
+A few possible work-arounds have been detailed here: https://github.com/kitematic/kitematic/issues/685 and https://github.com/kitematic/kitematic/issues/1031
 
 #### Windows Solution from @FogDev #1031
 Create a windows batch script under "C:\Program Files\Docker Toolbox\kitematic_proxy.cmd" with the below script, replacing "YOUR_PROXY" with the http://host:port of your own proxy.
