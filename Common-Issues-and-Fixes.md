@@ -39,7 +39,7 @@ If you've enabled SSH Multiplexing, it might be the cause of this problem.  As p
 
 **Windows 10**
 
-Virtualbox seems to have a bug in Windows 10 and host-only adapter (mentioned above), a fix/patch exists at the following location: [Windows host-only adapter creation fails due to slow background processing](https://www.virtualbox.org/ticket/14040)
+Virtualbox seems to have a bug in Windows 10 and host-only adapter (mentioned above), a fix/patch exists at the following location: [Windows host-only adapter creation fails due to slow background processing](https://www.virtualbox.org/ticket/14040) - The latest Windows 10 build is causing that the Virtualbox Host Only adapter, is not checking the "Virtualbox NDIS6 Bridged Networking Driver" so the default machine cannot start properly.
 
 Another possible fix is to enable Virtualization in the Bios - thanks to @SkiftCreative for the tip:
 * In windows 8/10 you can get there by clicking the power menu, holding [SHIFT] then hitting restart. 
