@@ -100,3 +100,12 @@ export HTTPS_PROXY=http://your.proxy.name:8080
 ```
 
 Now restart your vm for the above proxy settings to take effect via `docker-machine restart default`
+
+### Create VM with proxy
+1. Create env proxy settings:
+```
+export HTTP_PROXY=[IP]:[PORT]
+export HTTPS_PROXY=[IP]:[PORT]
+```
+2. Re-Create the **default** vm manually by supplying these additional required parameters: `--virtualbox-hostonly-cidr` and `--engine-env *_PROXY`.
+3.  Start **Kitematic** from **Git Bash/Bash** after exporting the proxy settings:
