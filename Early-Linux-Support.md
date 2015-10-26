@@ -28,6 +28,7 @@
   $ sudo git clone https://github.com/zedtux/kitematic
   $ cd kitematic/
   $ sudo git checkout linux-support
+  $ npm install electron-prebuilt
   $ sudo make
   ```
 
