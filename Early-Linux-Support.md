@@ -9,7 +9,7 @@ In order to be able to build and run Kitematic from scratch (clean Linux box), y
 In a terminal, execute the following with root privileges:
 
 ```
-$ apt-get install build-essential npm nodejs-legacy
+$ apt-get install build-essential npm nodejs-legacy libcanberra-gtk-module
 ```
 
 Note: `nodejs-legacy` is installing a symbolic link `/usr/bin/node -> nodejs` in order to make things working.
