@@ -1,47 +1,53 @@
-### Install NVM and Node
-1. Install NVM
+## Environment initialization
 
-  ```bash
-  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
-  ```
-2. Install Node v0.10.40
-  
-  ```bash
-   nvm install v0.10.40
-  ```
+In order to be able to build and run Kitematic from scratch (clean Linux box), you'll need to install some packages.
+
+### Install build dependences
+
+#### Debian
+
+In a terminal, execute the following with root privileges:
+
+```
+$ apt-get install build-essential npm nodejs-legacy
+```
+
+Note: `nodejs-legacy` is installing a symbolic link `/usr/bin/node -> nodejs` in order to make things working.
+
+### Install Docker
+
+```
+$ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+$ sudo gpasswd -a ${USER} docker
+$ sudo service docker restart
+```
+
+Now logout and login again, or execute the following in a terminal in order to tell the current terminal about the new docker group changes :
+
+```
+$ newgrp docker
+```
+
+### Build Kitematic
+
+In your developments folder or any other places:
+
+```bash
+$ git clone https://github.com/zedtux/kitematic
+$ cd kitematic/
+$ git checkout linux-support
+$ make
+```
 
 
-### Early Linux support from @zedtux
+## Start kitematic
 
-1. install docker
-  `$ curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
-2. add my user to docker group
-  `$ sudo gpasswd -a ${USER} docker`
-3. restart docker
-  `$ sudo service docker restart`
-4. tell the current terminal about the new docker group changes
-  `$ newgrp docker`
-5. download kitematic to /opt/kitematic (for example)
+From the Kitematic folder execute the following:
 
-  ```bash
-  $ cd /opt
-  $ sudo git clone https://github.com/zedtux/kitematic
-  $ cd kitematic/
-  $ sudo git checkout linux-support
-  $ npm install electron-prebuilt
-  $ sudo make
-  ```
+`$ npm start`
 
-6. adjust permissions so that anyone in docker group may use kitematic
 
-  ```bash
-  $ chmod -R g+w .
-  $ chgrp -R docker .
-  ```
-
-7. start kitematic
-  `$ npm start`
-
+## Troubleshooting
 
 ##### The terminal emulator symbolic link doesn't exists
 
@@ -51,6 +57,7 @@ This symbolic link is pointing to the default terminal which is then used by Kit
 Depending on your distribution you need to find the right package to install. For example on Debian [this page](https://packages.debian.org/fr/jessie/x-terminal-emulator) shows a list of possible packages to install `x-terminal-emulator`.
 
 ### Arch Linux AUR package
+
 This AUR package solely installs a binary build from the linux-support branch at https://github.com/zedtux/kitematic and adds a .desktop file and icon.
 
 ```bash
@@ -58,6 +65,3 @@ yaourt -S kitematic
 ```
 
 See: https://aur.archlinux.org/packages/kitematic
-
-
-
