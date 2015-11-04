@@ -66,4 +66,4 @@ This could be a simple DNS issue, try the following:
 
 
 ### Proxy issues:
-Move to: 
+Move to: [Common Proxy issues & Fixes](https://github.com/kitematic/kitematic/wiki/Common-Proxy-Issues-&-Fixes)
