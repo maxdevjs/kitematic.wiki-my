@@ -65,5 +65,13 @@ This could be a simple DNS issue, try the following:
 3. From the terminal prompt, type in `echo "nameserver 8.8.8.8" > /etc/resolv.conf`
 
 
+### IP/Subnet issues
+
+Thanks to @kriscarle for the steps:
+
+1) In a terminal, run `docker-machine rm default` in order to remove the existing VM
+2) Go into VirtualBox preferences and remove the host-only network. (steps shown above)
+3) In a terminal, run `docker-machine create --driver virtualbox --virtualbox-hostonly-cidr "192.168.59.1/24" default` - This will create the VM on a different subnet (`192.168.59.1/24` is used as an example but any valid subnet will work.)
+
 ### Proxy issues:
 Move to: [Common Proxy issues & Fixes](https://github.com/kitematic/kitematic/wiki/Common-Proxy-Issues-&-Fixes)
