@@ -47,6 +47,7 @@
  - Explore other out-of-the-box providers like Xhyve, Hyper-V
  - Advanced section with custom flags read from CLI
  - Default flags from machine
+ - Allow `tls-san` argument during machine creation
 
 - Docker Machine CLI bindings in Javascript
 
@@ -54,7 +55,7 @@
 
 - Machine management in settings panel. Possibly page for machine management (like the Log In page today), or even.
 - Kitematic runs without VBox installed, setup delegated to machine management.
-- Allow `tls-san` argument during machine creation
+
 
 Process
 - Proposal in wiki
