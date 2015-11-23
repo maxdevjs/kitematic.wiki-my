@@ -54,6 +54,7 @@
 
 - Machine management in settings panel. Possibly page for machine management (like the Log In page today), or even.
 - Kitematic runs without VBox installed, setup delegated to machine management.
+- Allow `tls-san` argument during machine creation
 
 Process
 - Proposal in wiki
