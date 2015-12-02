@@ -33,9 +33,8 @@ $ newgrp docker
 In your developments folder or any other places:
 
 ```bash
-$ git clone https://github.com/zedtux/kitematic
+$ git clone https://github.com/docker/kitematic
 $ cd kitematic/
-$ git checkout linux-support
 $ make
 ```
 
