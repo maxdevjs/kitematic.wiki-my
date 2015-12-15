@@ -13,6 +13,7 @@ $ apt-get install build-essential npm nodejs-legacy libcanberra-gtk-module
 ```
 
 Note: `nodejs-legacy` is installing a symbolic link `/usr/bin/node -> nodejs` in order to make things working.
+Verify that you're running the proper node version, which is `v4.2.2`
 
 ### Install Docker
 
