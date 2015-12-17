@@ -37,7 +37,7 @@ _If none of you vboxnet have the proper setup, you can change the one that your 
 
 If you've enabled SSH Multiplexing, it might be the cause of this problem.  As pointed out [in this GitHub issue](https://github.com/kitematic/kitematic/issues/386#issuecomment-130421161) disabling multiplexing for localhost resolved the issue for some people.
 
-**Windows 10**
+### Windows 10
 
 Virtualbox seems to have a bug in Windows 10 and host-only adapter (mentioned above), a fix/patch exists at the following location: [Windows host-only adapter creation fails due to slow background processing](https://www.virtualbox.org/ticket/14040) - The latest Windows 10 build is causing that the Virtualbox Host Only adapter, is not checking the "Virtualbox NDIS6 Bridged Networking Driver" so the default machine cannot start properly.
 
@@ -47,7 +47,7 @@ Another possible fix is to enable Virtualization in the Bios - thanks to @SkiftC
 * Go into advanced settings, then change EUFI settings (were not changing those settings, were just getting into BIOS).
 * Once in BIOS enable virtualization, then save and restart.
 
-### MS Edge can't see website:
+**MS Edge can't see website:**
 Go to Start, type "Internet Options" then then the Security Tab, then click Local Intranet, then Sites. Add your Virtual Machine's IP (in this case, the Docker Host) in that list and you're golden.
 ![](http://www.hanselman.com/blog/content/binary/Windows-Live-Writer/How-to-get-Microsoft-Edge-to-see-your-Vi_FDE5/image_3.png)
 
