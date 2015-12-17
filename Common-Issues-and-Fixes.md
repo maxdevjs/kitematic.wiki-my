@@ -52,6 +52,15 @@ Go to Start, type "Internet Options" then then the Security Tab, then click Loca
 ![](http://www.hanselman.com/blog/content/binary/Windows-Live-Writer/How-to-get-Microsoft-Edge-to-see-your-Vi_FDE5/image_3.png)
 
 _thanks to http://www.hanselman.com/blog/FixedMicrosoftEdgeCantSeeOrOpenVirtualBoxhostedLocalWebSites.aspx_
+
+In certain cases, the network driver can be disabled by some windows updates.
+Following the above steps to get to networking and Enabling "Virtualbox NDIS6 Bridget Networking Driver" seems to solve most of these issues.
+If the networking driver was disabled, VirtualBox should work just fine now (no reboot needed). Otherwise repeat for every network adapter you have (Ethernet, WiFi...) and always uncheck the NDIS6 checkbox -> apply -> check it again -> apply.
+
+
+
+
+
 ### 403 Errors
 
 If you're a new user, you will need to verify your Dockerhub email address before installing images will work.
