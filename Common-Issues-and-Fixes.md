@@ -94,4 +94,5 @@ Move to: [Common Proxy issues & Fixes](https://github.com/kitematic/kitematic/wi
 
 ### Running out of space
 By default the VM is created with 20GB of disk space. If you would like to create a VM with more disk space, the following command will do just that and create a 100GB VM:
+
 `docker-machine -D create -d virtualbox --virtualbox-disk-size "100000" default`
