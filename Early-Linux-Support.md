@@ -9,11 +9,31 @@ In order to be able to build and run Kitematic from scratch (clean Linux box), y
 In a terminal, execute the following with root privileges:
 
 ```
-$ apt-get install build-essential npm nodejs-legacy libcanberra-gtk-module
+$ apt-get install build-essential libcanberra-gtk-module
 ```
 
-Note: `nodejs-legacy` is installing a symbolic link `/usr/bin/node -> nodejs` in order to make things working.
-Verify that you're running the proper node version, which is `v4.2.2`
+Npm packages can be finicky - Install NVM to ensure the proper version
+
+```
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
+$ . ~/.nvm/nvm.sh
+```
+
+Add these lines to your `~/.bashrc`, `~/.profile`, or `~/.zshrc` file to have it automatically sourced upon login:
+
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+Install Node v4.2.2
+
+```
+nvm install 4.2.2
+nvm alias default v4.2.2
+```
+
+Verify that you're running the proper node version `node -v`, which is `v4.2.2`
 
 ### Install Docker
 
