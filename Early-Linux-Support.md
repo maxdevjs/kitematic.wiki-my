@@ -38,7 +38,7 @@ Verify that you're running the proper node version `node -v`, which is `v4.2.2`
 ### Install Docker
 
 ```
-$ curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+$ curl -sSL https://get.docker.com/ | sudo sh
 $ sudo gpasswd -a ${USER} docker
 $ sudo service docker restart
 ```
