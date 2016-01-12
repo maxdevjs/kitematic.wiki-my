@@ -57,6 +57,13 @@ In certain cases, the network driver can be disabled by some windows updates.
 Following the above steps to get to networking and Enabling "**Virtualbox NDIS6 Bridget Networking Driver**" seems to solve most of these issues.
 If the networking driver was disabled, VirtualBox should work just fine now (no reboot needed). Otherwise repeat for every network adapter you have (Ethernet, WiFi...) and always uncheck the NDIS6 checkbox -> apply -> check it again -> apply.
 
+TL;DR:
+
+1. Open network center
+2. Click "Change adapter settings"
+3. Right click your Virtualbox host-only adapter and select Properties
+4. Enable "Virtualbox NDIS6 Bridget Networking Driver"
+
 
 
 
