@@ -47,7 +47,7 @@ Another possible fix is to enable Virtualization in the Bios (VT-X) - thanks to 
 * Go into advanced settings, then change EUFI settings (were not changing those settings, were just getting into BIOS).
 * Once in BIOS enable virtualization, then save and restart.
 
-Make sure that the Hyper-V daemon is not running, as it can conflict with Virtualbox installation
+Make sure that the Hyper-V daemon is **not running**, as it will conflict with Virtualbox installation/setup.
 
 **MS Edge can't see website:**
 Go to Start, type "Internet Options" then then the Security Tab, then click Local Intranet, then Sites. Add your Virtual Machine's IP (in this case, the Docker Host) in that list and you're golden.
