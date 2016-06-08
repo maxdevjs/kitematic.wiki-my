@@ -1,0 +1,1 @@
+The terminal emulator symbolic link doesn't exists. Please read the Wiki at https://github.com/kitematic/kitematic/wiki/Common-Issues-and-Fixes#early-linux-support-from-zedtux
