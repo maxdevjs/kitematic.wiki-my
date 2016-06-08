@@ -1,3 +1,6 @@
+# A lot of these steps are now out-dated, as a Kitematic Ubuntu package is now part of our release.
+(Big thanks to @adomenech73 for the package PR)
+
 ## Environment initialization
 
 In order to be able to build and run Kitematic from scratch (clean Linux box), you'll need to install some packages.
