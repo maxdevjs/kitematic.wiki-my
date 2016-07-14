@@ -33,6 +33,14 @@ export HTTPS_PROXY=http://your.proxy.name:8080
 
 Now restart your vm for the above proxy settings to take effect via `docker-machine restart default`
 
+### Make the proxy settings 'sticky'
+
+Thanks to @PeterMcLaren for providing this. "The nice thing about setting at the windows level is the ; "Open Kitematic..." on the tray icon works properly."
+
+![Set Windows Env Var](https://cloud.githubusercontent.com/assets/13315640/16794565/7ae83c78-48d0-11e6-8e7f-f89174855972.png)
+
+Once the above are setup, a reboot will be required for them to be picked up. 
+
 ### Create VM with proxy
 1. Create env proxy settings:
 ```
