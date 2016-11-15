@@ -1,10 +1,12 @@
 ### Machine issues (VirtualBox)
-If you keep experiencing VM creation issue, install the [test VirtualBox software](https://www.virtualbox.org/wiki/Testbuilds), as it has been shown to be a viable solution for some, 
+If you keep experiencing VM creation issue, install the [test VirtualBox software](https://www.virtualbox.org/wiki/Testbuilds), as it has been shown to be a viable solution for some. 
 
 1. Uninstall any existing VirtualBox using the official Uninstall.tool You may need to reboot if certain kext files are not properly unloaded.
 2. Run Kitematic [reset script](https://github.com/kitematic/kitematic/blob/master/util/reset)
 3. Install [VirtualBox 5.x Testing](https://www.virtualbox.org/wiki/Testbuilds) 
 4. Install [Docker Toolbox](https://www.docker.com/toolbox)
+
+If using Docker Toolbox on Windows, check that the account running Kitematic has set `DOCKER_TOOLBOX_INSTALL_PATH = C:\Program Files\Docker Toolbox` (or whatever the actual path is). If you installed as admin, this is likely not set for your user account.
 
 ### Kitematic VM Stuck at 99% or Cannot pull images
 
