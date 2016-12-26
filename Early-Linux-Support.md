@@ -6,7 +6,7 @@ In your case `/usr/bin/x-terminal-emulator` either:
 
 - is broken
 - does not exist
-- the linked terminal emulator does not support the `-c` option
+- the linked terminal emulator does not support the `-e` option
 
 On Debian and Ubuntu-based distros, you would execute `sudo update-alternatives --config x-terminal-emulator` and choose the correct link in the UI.
 
